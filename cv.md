@@ -1,26 +1,25 @@
 # Dmitrii Malashev
+
 ## Contacts
-Erevan, Armenia
+- **tel:** +374 91 527284
+- **e-mail:** dmalashev@gmail.com
+- **GitHub:** [dmalashev](https://github.com/dmalashev)
+- **Telegram:** @aftoywu
 
-tel: +374 91 527284
-
-GitHub: dmalashev
-
-Telegram: @aftoywu
-
-Discord: shoffff
 ## About me
 I like to program and make interfaces, so I want to become a front-end developer. I had experience in programming with Fortran and Visual Basic. Now I have 3rd try to done RS course, and hopefully this try will be succesfully.
-## Skills & Instruments
+
+## Skills
 - HTML
 - CSS
-- JavaScript
+- JavaScript (Basics)
 - Git, GitHub
-- Figma
+- Figma (for web-development)
 - VS Code
+
 ## Code example
-Encode specified string with ROT13 cipher
-```
+**Task:** Encode specified string with ROT13 cipher
+```javascript
 function encodeToRot13(str) {
   let newStr = '';
   let newCharCode;
@@ -48,13 +47,21 @@ function encodeToRot13(str) {
   return newStr;
 }
 ```
-## Working experience
-https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/
 
-https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/coffee-house/
+## Experience
+There are two educational projects that I made in JS/Front-end course in RS School:
+
+**Hangman:** https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/ \
+**Coffee-house:** https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/coffee-house/
+
 ## Education
-- Master degree, Aviation and rocket engines, Moscow Aviation Insitute
-- ?
+**University:** Master's degree in the field of heat engineering, Moscow Aviation Insitute
+
+**Courses:**
+- HTML course, Code Basics
+- CSS course , Code Basics
+- Git course, Slurm
+
 ## Languages
-- English - B1
-- Russian (Native)
+- English - Intermediate (B1)
+- Russian - Native
