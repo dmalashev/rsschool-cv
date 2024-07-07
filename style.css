@@ -7,7 +7,8 @@ html {
 
 body {
     font-family: "Lexend", sans-serif;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #f5af36;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 150%;
@@ -27,11 +28,11 @@ body {
 
 .nav-elements {
     display: flex;
-    /* gap: 1.6rem; */
     justify-content: space-between;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 125%;
+    flex-wrap: wrap;
 }
 
 .nav-item {
@@ -90,7 +91,6 @@ body {
     align-items: center;
     gap: 5rem;
     padding: 5rem;
-    flex-shrink: 1;
 }
 
 .skills-list {
@@ -159,4 +159,65 @@ body {
 .italic {
     font-style: italic;
     font-weight: 200;
+}
+
+@media (max-width: 1439px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+    } 
+
+    .nav-elements {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .name {
+        font-size: 6rem;
+        font-weight: 600;
+        line-height: 105%;
+    }
+
+    .chapter-name {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .skills-list {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        font-size: 1.6rem;
+    }
+
+    .code {
+        font-size: 1.2rem;
+    }
+
+    .main {
+        padding: 2rem;
+    }
+
+    .main-info {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .code {
+        font-size: 0.8rem;
+    }
+    .skills-list {
+        display: block;
+    }
 }
