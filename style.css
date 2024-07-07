@@ -17,18 +17,43 @@ body {
     width: 144rem;
     margin: auto;
     background-color: white;
-    padding: 5rem;
     box-sizing: border-box;
+}
+
+.header {
+    background-color: #f5af36;
+    padding: 2rem 5rem;
 }
 
 .nav-elements {
     display: flex;
-    gap: 1rem;
-    justify-content: end;
+    /* gap: 1.6rem; */
+    justify-content: space-between;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 125%;
 }
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -0.4rem;
+    width: 0;
+    height: 0.3rem;
+    background-color: black;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
 
 .name {
     font-size: 7.2rem;
@@ -56,6 +81,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+    padding: 5rem;
 }
 
 .skills-list {
@@ -74,4 +100,38 @@ body {
     background-color: rgb(230, 230, 230);
     border-radius: 2rem;
     padding: 0rem 5rem;
+}
+
+.footer {
+    background-color: #f5af36;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+.github-link {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    line-height: 150%;
+    transition: 0.5s;
+}
+
+.github-link:hover {
+    color: white;
+}
+
+.github-link path {
+    transition: 0.5s;
+}
+
+.github-link:hover path {
+    fill: white;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
