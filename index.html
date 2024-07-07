@@ -4,13 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
         <header></header>
-        <main></main>
+        <main>
+            <h1>Dmitrii Malashev</h1>
+
+            <h2>Contacts</h2>
+            <ul>
+                <li>tel: +374 91 527284</li>
+                <li>e-mail: dmalashev@gmail.com</li>
+                <li>GitHub: <a href="https://github.com/dmalashev">dmalashev</a></li>
+                <li>Telegram: @aftoywu</li>
+            </ul>
+            
+            <h2>About me</h2>
+            <p>I like to program and make interfaces, so I want to become a front-end developer. I had experience in programming with Fortran and Visual Basic. Now I have 3rd try to done RS course, and hopefully this try will be succesfully.</p>
+            
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (Basics)</li>
+                <li>Git, GitHub</li>
+                <li>Figma (for web-development)</li>
+                <li>VS Code</li>
+            </ul>
+            
+            <h2>Code example</h2>
+            <p>Task: Encode specified string with ROT13 cipher</p>
+            <code>
+                <pre>
+                    function encodeToRot13(str) {
+                        let newStr = '';
+                        let newCharCode;
+                        for (let i = 0; i <= str.length - 1; i += 1) {
+                          if (
+                            !(
+                              (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) ||
+                              (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122)
+                            )
+                          ) {
+                            newStr += str[i];
+                          } else {
+                            newCharCode = str.charCodeAt(i) + 13;
+                            if (str[i] === str[i].toUpperCase()) {
+                              if (newCharCode > 90) {
+                                newCharCode = newCharCode - 90 + 65 - 1;
+                              }
+                            }
+                            if (newCharCode > 122) {
+                              newCharCode = newCharCode - 122 + 97 - 1;
+                            }
+                            newStr += String.fromCharCode(newCharCode);
+                          }
+                        }
+                        return newStr;
+                      }
+                </pre>
+            </code>
+            
+            <h2>Experience</h2>
+            <p>There are two educational projects that I made in JS/Front-end course in RS School:</p>
+            <ul>
+                <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/">Hangman</a></li>
+                <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/coffee-house/">Coffee-house</a></li>
+            </ul>
+            
+            <h2>Education</h2>
+            <ul>
+                <li>University: Master's degree in the field of heat engineering, Moscow Aviation Insitute</li>
+                <li>Courses:
+                    <ul>
+                        <li>HTML course, Code Basics</li>
+                        <li>CSS course , Code Basics</li>
+                        <li>Git course, Slurm</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h2>Languages</h2>
+            <ul>
+                <li>English - Intermediate (B1)</li>
+                <li>Russian - Native</li>
+            </ul>
+        </main>
         <footer></footer>
     </div>
 </body>
