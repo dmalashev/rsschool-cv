@@ -48,16 +48,16 @@
             
             <h2 id="code">Code example</h2>
             <p>Task: Encode specified string with ROT13 cipher</p>
-            <code>
-                <pre>
+            <pre>
+                <code>
                     function encodeToRot13(str) {
                         let newStr = '';
                         let newCharCode;
-                        for (let i = 0; i <= str.length - 1; i += 1) {
+                        for (let i = 0; i &lt;= str.length - 1; i += 1) {
                           if (
                             !(
-                              (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) ||
-                              (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122)
+                              (str.charCodeAt(i) >= 65 && str.charCodeAt(i) &lt;= 90) ||
+                              (str.charCodeAt(i) >= 97 && str.charCodeAt(i) &lt;= 122)
                             )
                           ) {
                             newStr += str[i];
@@ -76,8 +76,8 @@
                         }
                         return newStr;
                       }
-                </pre>
-            </code>
+                    </code>
+            </pre>
             
             <h2 id="experience">Experience</h2>
             <p>There are two educational projects that I made in JS/Front-end course in RS School:</p>
