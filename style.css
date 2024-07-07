@@ -109,6 +109,7 @@ body {
     background-color: rgb(230, 230, 230);
     border-radius: 2rem;
     padding: 0rem 5rem;
+    margin: auto;
 }
 
 .footer {
