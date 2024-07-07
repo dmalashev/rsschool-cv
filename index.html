@@ -25,16 +25,18 @@
         <main class="main">
             <h1 class="name">Dmitrii Malashev</h1>
 
-            <section class="main-info">
-                <img src="./assets/img/avatar.png" alt="avatar" height="360">
-                <h2 class="chapter-name" id="contacts">Contacts</h2>
-                <ul>
-                    <li>tel: +374 91 527284</li>
-                    <li>e-mail: dmalashev@gmail.com</li>
-                    <li>GitHub: <a href="https://github.com/dmalashev">dmalashev</a></li>
-                    <li>Telegram: @aftoywu</li>
-                </ul>
-            </section>
+            <div class="main-info">
+                <img src="./assets/img/avatar.png" alt="avatar" height="240">
+                <section class="chapter">
+                    <h2 class="chapter-name" id="contacts">Contacts</h2>
+                    <ul class="list">
+                        <li>tel: +374 91 527284</li>
+                        <li>e-mail: dmalashev@gmail.com</li>
+                        <li>GitHub: <a href="https://github.com/dmalashev">dmalashev</a></li>
+                        <li>Telegram: @aftoywu</li>
+                    </ul>
+                </section>
+            </div>
             
             <section class="chapter">
                 <h2 class="chapter-name" id="about">About me</h2>
@@ -91,7 +93,7 @@ function encodeToRot13(str) {
             <section class="chapter">
                 <h2 class="chapter-name" id="experience">Experience</h2>
                 <p>There are two educational projects that I made in JS/Front-end course in RS School:</p>
-                <ul>
+                <ul class="list">
                     <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/">Hangman</a></li>
                     <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/coffee-house/">Coffee-house</a></li>
                 </ul>
@@ -99,10 +101,10 @@ function encodeToRot13(str) {
 
             <section class="chapter">
                 <h2 class="chapter-name" id="education">Education</h2>
-                <ul>
+                <ul class="list">
                     <li>University: Master's degree in the field of heat engineering, Moscow Aviation Insitute</li>
                     <li>Courses:
-                        <ul>
+                        <ul class="list lower-list">
                             <li>HTML course, Code Basics</li>
                             <li>CSS course , Code Basics</li>
                             <li>Git course, Slurm</li>
@@ -113,7 +115,7 @@ function encodeToRot13(str) {
 
             <section class="chapter">
                 <h2 class="chapter-name" id="languages">Languages</h2>
-                <ul>
+                <ul class="list">
                     <li>English - Intermediate (B1)</li>
                     <li>Russian - Native</li>
                 </ul>
