@@ -154,3 +154,8 @@ body {
 .lower-list {
     list-style: circle;
 }
+
+.italic {
+    font-style: italic;
+    font-weight: 200;
+}
