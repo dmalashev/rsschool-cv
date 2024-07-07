@@ -22,93 +22,106 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1>Dmitrii Malashev</h1>
+        <main class="main">
+            <h1 class="name">Dmitrii Malashev</h1>
 
-            <section class="main-info"><img src="./assets/img/avatar.png" alt="avatar">
-
-                <h2 id="contacts">Contacts</h2>
+            <section class="main-info">
+                <img src="./assets/img/avatar.png" alt="avatar" height="360">
+                <h2 class="chapter-name" id="contacts">Contacts</h2>
                 <ul>
                     <li>tel: +374 91 527284</li>
                     <li>e-mail: dmalashev@gmail.com</li>
                     <li>GitHub: <a href="https://github.com/dmalashev">dmalashev</a></li>
                     <li>Telegram: @aftoywu</li>
-                </ul></section>
+                </ul>
+            </section>
             
-            <h2 id="about">About me</h2>
-            <p>I like to program and make interfaces, so I want to become a front-end developer. I had experience in programming with Fortran and Visual Basic. Now I have 3rd try to done RS course, and hopefully this try will be succesfully.</p>
+            <section class="chapter">
+                <h2 class="chapter-name" id="about">About me</h2>
+                <p>I like to program and make interfaces, so I want to become a front-end developer. I had experience in programming with Fortran and Visual Basic. Now I have 3rd try to done RS course, and hopefully this try will be succesfully.</p>
+            </section>
             
-            <h2 id="skills">Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript (Basics)</li>
-                <li>Git, GitHub</li>
-                <li>Figma (for web-development)</li>
-                <li>VS Code</li>
-            </ul>
-            
-            <h2 id="code">Code example</h2>
-            <p>Task: Encode specified string with ROT13 cipher</p>
-            <pre>
-                <code>
-                    function encodeToRot13(str) {
-                        let newStr = '';
-                        let newCharCode;
-                        for (let i = 0; i &lt;= str.length - 1; i += 1) {
-                          if (
-                            !(
-                              (str.charCodeAt(i) >= 65 && str.charCodeAt(i) &lt;= 90) ||
-                              (str.charCodeAt(i) >= 97 && str.charCodeAt(i) &lt;= 122)
-                            )
-                          ) {
-                            newStr += str[i];
-                          } else {
-                            newCharCode = str.charCodeAt(i) + 13;
-                            if (str[i] === str[i].toUpperCase()) {
-                              if (newCharCode > 90) {
-                                newCharCode = newCharCode - 90 + 65 - 1;
-                              }
-                            }
-                            if (newCharCode > 122) {
-                              newCharCode = newCharCode - 122 + 97 - 1;
-                            }
-                            newStr += String.fromCharCode(newCharCode);
-                          }
-                        }
-                        return newStr;
-                      }
+            <section class="chapter">
+                <h2 class="chapter-name" id="skills">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skill-item"><img src="./assets/icons/icons8-html.svg" alt="html">HTML</li>
+                    <li class="skill-item"><img src="./assets/icons/icons8-css.svg" alt="css">CSS</li>
+                    <li class="skill-item"><img src="./assets/icons/icons8-js.svg" alt="js">JavaScript (Basics)</li>
+                    <li class="skill-item"><img src="./assets/icons/icons8-git.svg" alt="git">Git</li>
+                    <li class="skill-item"><img src="./assets/icons/icons8-github.svg" alt="github">GitHub</li>
+                    <li class="skill-item"><img src="./assets/icons/icons8-figma.svg" alt="figma">Figma (for web-development)</li>
+                </ul>
+            </section>
+
+            <section class="chapter">
+                <h2 class="chapter-name" id="code">Code example</h2>
+                <p>Task: Encode specified string with ROT13 cipher</p>
+                <pre class="code">
+                    <code>
+function encodeToRot13(str) {
+    let newStr = '';
+    let newCharCode;
+    for (let i = 0; i &lt;= str.length - 1; i += 1) {
+    if (
+        !(
+        (str.charCodeAt(i) >= 65 && str.charCodeAt(i) &lt;= 90) ||
+        (str.charCodeAt(i) >= 97 && str.charCodeAt(i) &lt;= 122)
+        )
+    ) {
+        newStr += str[i];
+    } else {
+        newCharCode = str.charCodeAt(i) + 13;
+        if (str[i] === str[i].toUpperCase()) {
+        if (newCharCode > 90) {
+            newCharCode = newCharCode - 90 + 65 - 1;
+        }
+        }
+        if (newCharCode > 122) {
+        newCharCode = newCharCode - 122 + 97 - 1;
+        }
+        newStr += String.fromCharCode(newCharCode);
+    }
+    }
+    return newStr;
+}
                     </code>
-            </pre>
-            
-            <h2 id="experience">Experience</h2>
-            <p>There are two educational projects that I made in JS/Front-end course in RS School:</p>
-            <ul>
-                <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/">Hangman</a></li>
-                <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/coffee-house/">Coffee-house</a></li>
-            </ul>
-            
-            <h2 id="education">Education</h2>
-            <ul>
-                <li>University: Master's degree in the field of heat engineering, Moscow Aviation Insitute</li>
-                <li>Courses:
-                    <ul>
-                        <li>HTML course, Code Basics</li>
-                        <li>CSS course , Code Basics</li>
-                        <li>Git course, Slurm</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <h2 id="languages">Languages</h2>
-            <ul>
-                <li>English - Intermediate (B1)</li>
-                <li>Russian - Native</li>
-            </ul>
+                </pre>
+            </section>
+
+            <section class="chapter">
+                <h2 class="chapter-name" id="experience">Experience</h2>
+                <p>There are two educational projects that I made in JS/Front-end course in RS School:</p>
+                <ul>
+                    <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/">Hangman</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/coffee-house/">Coffee-house</a></li>
+                </ul>
+            </section>
+
+            <section class="chapter">
+                <h2 class="chapter-name" id="education">Education</h2>
+                <ul>
+                    <li>University: Master's degree in the field of heat engineering, Moscow Aviation Insitute</li>
+                    <li>Courses:
+                        <ul>
+                            <li>HTML course, Code Basics</li>
+                            <li>CSS course , Code Basics</li>
+                            <li>Git course, Slurm</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="chapter">
+                <h2 class="chapter-name" id="languages">Languages</h2>
+                <ul>
+                    <li>English - Intermediate (B1)</li>
+                    <li>Russian - Native</li>
+                </ul>
+            </section>
         </main>
         <footer>
             <span><a href="https://github.com/dmalashev">dmalashev</a>, 2024</span>
-            <a href="https://rs.school/courses/javascript-ru"><img src="./assets/img/rs_school_js.svg" alt="RS School"></a>
+            <a href="https://rs.school/courses/javascript-ru"><img src="./assets/img/rs_school_js.svg" alt="RS School" height="120"></a>
         </footer>
     </div>
 </body>
