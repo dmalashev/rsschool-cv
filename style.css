@@ -4,9 +4,24 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 .wrapper {
     width: 144rem;
     margin: auto;
+    background-color: white;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.nav-elements {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.main-info {
+    display: flex;
+    gap: 1rem;
 }
