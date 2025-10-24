@@ -111,8 +111,14 @@ body {
 .code {
     background-color: rgb(230, 230, 230);
     border-radius: 2rem;
-    padding: 0rem 5rem;
+    padding: 0rem 2rem;
     margin: auto;
+    /* font-size: 1rem; */
+    text-wrap: inherit;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
