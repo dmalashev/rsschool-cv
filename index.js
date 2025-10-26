@@ -16,5 +16,3 @@ burgerButton.addEventListener('click', changeActiveStatus);
 for (const navItem of navItems) {
   navItem.addEventListener('click', changeActiveStatus);
 }
-
-// console.log(burgerButton);

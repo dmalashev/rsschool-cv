@@ -7,7 +7,6 @@ html {
 
 body {
     font-family: "Lexend", sans-serif;
-    /* background-color: black; */
     background-color: #f5af36;
     font-size: 1.8rem;
     font-weight: 400;
@@ -140,7 +139,6 @@ body.active {
     border-radius: 2rem;
     padding: 0rem 2rem;
     margin: auto;
-    /* font-size: 1rem; */
     text-wrap: inherit;
     line-height: 150%;
     display: flex;
@@ -248,7 +246,6 @@ body.active {
     } 
 
     .nav-elements {
-        /* font-size: 1.6rem; */
         font-weight: 600;
         line-height: 125%;
     }
