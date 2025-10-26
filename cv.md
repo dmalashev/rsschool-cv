@@ -8,12 +8,15 @@
 - **Discord:** [@shoffff](https://discord.com/users/452211414569058305)
 
 ## About Me
-My name is Dmitrii. I'm 26 and I'm learning front-end development. With more diving to this field I become more and more interested in it, so I really want to learn front-end and work as a developer. At the moment I'm studying at RS School (my second try for Stage1, fourth try at all). Hopefully, this try will be successful like previous Stage0, because now I have more skills and understanding of the educational process.
+Junior Frontend Developer at the beginning of my career, looking for opportunities to grow through a job or internship.
 
 ## Skills
 - HTML
 - CSS
-- JS (Basics)
+- JavaScript
+- TypeScript
+- React
+- Vite
 - Git
 - GitHub
 - VS Code
@@ -31,19 +34,17 @@ function rgb(r, g, b) {
 ```
 
 ## Work Experience
-- [Image Gallery](https://rolling-scopes-school.github.io/dmalashev-JSFEPRESCHOOL2024Q2/image-gallery/)
 - [Breakout Game](https://rolling-scopes-school.github.io/dmalashev-JSFEPRESCHOOL2024Q2/random-game/)
-- [Hangman](https://rolling-scopes-school.github.io/dmalashev-JSFE2023Q4/hangman/)
-- [CV Stage0](https://dmalashev.github.io/rsschool-cv_st0/)
+- [Nonograms](https://rolling-scopes-school.github.io/dmalashev-JSFE2024Q4/nonograms/)
   
 ## Education
-**University:**  Master's degree in the field of heat engineering, Moscow Aviation Insitute, 2022
+**University:**  Moscow Aviation Institute (MAI), Bachelor’s and Master’s Degrees in Aircraft Engines
 
 **Courses:**
-  - RS School Stage0 [Certificate](https://app.rs.school/certificate/tnx13nf8)
-  - Code Basics Courses: HTML, CSS, JavaScript
-  - Git course, Slurm
+  - JS/FE PRE-SCHOOL 2024Q2 [Certificate](https://app.rs.school/certificate/tnx13nf8)
+  - JAVASCRIPT/FRONT-END 2024Q4 [Certificate](https://app.rs.school/certificate/dxjgpf6m)
+
 ## Language
-- English - Intermediate (B1)
+- English - B2 Upper-Intermediate [Certificate](https://cert.efset.org/en/YBR9ma)
 - Russian - Native
 
