@@ -12,6 +12,11 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 150%;
+    overflow-x: hidden;
+}
+
+body.active {
+    overflow-y: hidden;
 }
 
 .wrapper {
@@ -33,6 +38,7 @@ body {
     font-weight: 600;
     line-height: 125%;
     flex-wrap: wrap;
+    transition: 0.5s;
 }
 
 .nav-item {
@@ -53,6 +59,26 @@ body {
 
 .nav-item:hover::after {
     width: 100%;
+}
+
+.burger-menu {
+    width: 4rem;
+    height: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    display: none;
+    justify-self: end;
+}
+
+.burger-line {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: black;
+    border-radius: 0.1rem;
+    transition: 0.3s;
 }
 
 
@@ -179,6 +205,41 @@ body {
     }
 }
 
+@media (max-width: 1100px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .upper-line.active {
+        transform: rotate(45deg) translateY(0.75rem);
+    }
+
+    .lower-line.active {
+        transform: rotate(-45deg) translateY(-0.75rem);
+    }
+
+    .nav-elements {
+        position: absolute;
+        top: 8rem;
+        left: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        height: 100%;
+        background-color: #f5af36;
+        z-index: 1;
+        padding: 2rem;
+        box-sizing: border-box;
+        font-size: 3rem;
+    }
+
+    .nav-elements.active {
+        left: 0;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 1.6rem;
@@ -187,7 +248,7 @@ body {
     } 
 
     .nav-elements {
-        font-size: 1.6rem;
+        /* font-size: 1.6rem; */
         font-weight: 600;
         line-height: 125%;
     }
